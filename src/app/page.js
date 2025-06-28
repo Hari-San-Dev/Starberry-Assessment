@@ -111,6 +111,7 @@ const Login = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email"
+              className="text-black"
             />
 
             {/* Password Field */}
@@ -123,6 +124,7 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Enter your password"
+              className="text-black"
             />
 
             {/* Submit Button */}
