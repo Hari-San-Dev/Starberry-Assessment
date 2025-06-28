@@ -10,7 +10,7 @@ const Input = ({ label, id, ...props }) => (
     <input
       id={id}
       {...props}
-      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-black focus:border-black transition-all duration-150 bg-white placeholder-gray-400"
+      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-black focus:border-black transition-all duration-150 bg-white placeholder-gray-400 text-black"
     />
   </div>
 );
