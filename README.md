@@ -30,7 +30,7 @@ This application is a modern property listing platform built with Next.js. It fe
 - **Navigation:** Clicking a property card saves its details to session storage and navigates to a detailed property page.
 - **Protected Routes & Authorization:** Certain pages are protected and require user authentication. Authorization logic ensures only permitted users can access sensitive routes.
 - **Validation:** User input and data are validated both on the client and server to ensure data integrity and security.
-- **Static & SSR Pages:** The app uses both static generation (SSG) and server-side rendering (SSR) for optimal performance and SEO. Some pages are pre-rendered at build time, while others fetch data on each request.
+- **Static & SSR Pages:** The app uses both static generation (SSG) and server-side rendering (SSR) for optimal performance and SEO. With the Next.js App Router, data fetching is handled using async server components and route segment configuration (such as `export const revalidate`), rather than the traditional `getStaticProps`/`getServerSideProps` methods. Some pages are pre-rendered at build time, while others fetch data on each request.
 - **Responsive Design:** The layout adapts to different screen sizes for optimal viewing on all devices. 
 - **Easy Customization:** Components are modular and reusable, making it easy to extend or modify functionality.
 - **Picture-in-Picture (PiP) / Open Image:** Clicking the PiP icon on the property detail page will attempt to open the image in Picture-in-Picture mode (if supported), or open the image in a new browser tab.
